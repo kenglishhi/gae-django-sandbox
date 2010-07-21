@@ -1,5 +1,3 @@
-
-
 {% extends "base.html" %}
 {% block content %}
 <h2>Upcoming Garage Sales</h2>
@@ -8,9 +6,7 @@
 {% for garage_sale in upcoming_garage_sales %}
   <tr>
      <td> {{ garage_sale.sale_date|date:"F d" }}</td> 
-     <td> <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=940+Spencer+Street,+Honolulu,+HI&sll=21.307366,-157.846773&sspn=0.011335,0.01929&ie=UTF8&hq=&hnear={{ garage_sale.address }}&t=h&z=16">
-
-{{ garage_sale.address }}</a></td> 
+     <td> <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=940+Spencer+Street,+Honolulu,+HI&sll=21.307366,-157.846773&sspn=0.011335,0.01929&ie=UTF8&hq=&hnear={{ garage_sale.address }}&t=h&z=16">{{ garage_sale.address }}</a></td> 
   </tr>
 {% endfor %}
 </table>
