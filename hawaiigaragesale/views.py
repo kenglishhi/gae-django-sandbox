@@ -10,7 +10,7 @@ from hawaiigaragesale.models import GarageSale
 from django.http import HttpResponse
 
 def index(request):
-  upcoming_garage_sales = GarageSale.objects.all().filter("sale_date >=", date.today()).order('-sale_date')[:5]
+  upcoming_garage_sales = GarageSale.objects.all().filter("sale_date >=", date.today()).order('sale_date')[:20]
   t = loader.get_template('hawaiigaragesale/index.html')
   log.debug("My Message") 
   log.debug("Array len is %s " % len(upcoming_garage_sales)  ) 
