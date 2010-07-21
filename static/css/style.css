@@ -21,3 +21,26 @@ a:hover { color:#919f20; }
 .post .title a:hover { color:#919f20; }
 
 .post .tags { font-family:"Lucida Grande", Geneva, Helvetica, sans-serif; font-size:10px; font-weight:lighter; font-variant:normal; color:#666; text-align:left; letter-spacing:0.3em; margin-bottom:16px; }
+table.garage-sale-list {
+	border-width: thin;
+	border-spacing: ;
+	border-style: solid;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.garage-sale-list th {
+	border-width: 1px;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
+table.garage-sale-list td {
+	border-width: 1px;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
