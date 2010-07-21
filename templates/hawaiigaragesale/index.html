@@ -1,0 +1,9 @@
+{% if latest_garage_sales %}
+<ul>
+{% for garage_sale in latest_garage_sales %}
+  <li>{{ garage_sale.question }}</li>
+{% endfor %}
+</ul>
+{% else %}
+  <p>No Garage Sales are available.</p>
+{% endif %}
